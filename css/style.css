@@ -1,9 +1,11 @@
 *{
     box-sizing: border-box;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 body{
     background-color: #e9ede8;
 }
+/* used for the navigation bar at the top */
 .sticky{
     position: sticky;
     top: 0px;
@@ -28,10 +30,14 @@ nav{
     height: 2rem;
     width: 2rem;
     color:#5a964e;
-    font-weight: bold;
+    font-weight: 500;
+}
+.nightmode{
+    width: 1rem;
+    height: 1rem;
 }
 .nav-list{
-
+    gap:0.5rem;
 }
 .bolded{
     font-weight: bold;
@@ -46,9 +52,10 @@ nav{
     grid-gap: 2rem;
 }
 .website-structure{
+    margin:auto;
     flex-direction: column;
     max-width: 42rem;
-    padding: 5rem 0rem 10rem 0rem;
+    padding: 5rem 0rem 5rem 0rem;
     border-bottom: 1px solid #b7e0ae;
 }
 .hero {
@@ -75,7 +82,7 @@ nav{
 }
 .hero-button:active{
     background-color: white;
-    transition: 500ms;
+    transition: 200ms;
 }
 .section1{
     margin: auto;
@@ -100,11 +107,35 @@ nav{
 .project-card-description{
     width: 100%;
     height: 8rem;
+    padding: 1rem;
+    
+}
+.project-card:hover{
+    background-color: #c2e6bb;
+    transition: 500ms;
+}
+.project-card:active{
+    background-color: white;
+    transition: 200ms;
 }
 .project-card-description h3{
     margin:auto;
 }
-
+.social-container{
+    justify-content: center;
+}
+.clickable{
+    user-select: none;
+    cursor: pointer;
+}
+.box-shadow{
+    box-shadow: 3px 3px 6px 0 rgb(0 0 0 / 50%);
+}
+.tech-container{
+    justify-content: space-between;
+    color: #82a77b;
+    font-weight: bold;
+}
 
 @media screen and (max-width: 672px){
     .hero-button-container{
