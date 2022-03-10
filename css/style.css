@@ -1,6 +1,11 @@
 *{
     box-sizing: border-box;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "Inter", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+:root{
+    --accent-color:#82a77b;
+    --text-color: black;
+    --bground-color: #e9ede8;
 }
 body{
     background-color: #e9ede8;
@@ -30,7 +35,8 @@ nav{
     height: 2rem;
     width: 2rem;
     color:#5a964e;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 0.8rem;
 }
 .nightmode{
     width: 1rem;
@@ -40,11 +46,21 @@ nav{
     gap:0.5rem;
 }
 .bolded{
-    font-weight: bold;
-    color: #82a77b;
+    font-weight: 700;
+}
+.accented{
+    color: var(--accent-color);
 }
 .flex{
     display: flex;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
 }
 .grid{
     display: grid;
@@ -55,20 +71,37 @@ nav{
     margin:auto;
     flex-direction: column;
     max-width: 42rem;
-    padding: 5rem 0rem 5rem 0rem;
+    padding: 2.5rem 0rem 2.5rem 0rem;
     border-bottom: 1px solid #b7e0ae;
+}
+.transition{
+    transition: all 0.5s;
 }
 .hero {
     margin:  auto;
+
+}
+.hide{
+    opacity: 0;
 }
 .hero-image{
-    width:100%;
+    /* background-image: url('/me.jpg'); */
+    width: 100%;
     border: 1px solid #b7e0ae;
     height: 20rem;
+
 }
 .hero-button-container{
     padding-top: 2rem;
     justify-content: space-between;
+}
+.logo:hover{
+    background-color: #c2e6bb;
+    transition: 500ms;
+}
+.logo:active{
+    background-color: white;
+    transition: 200ms;
 }
 .hero-button{
     border: 1px solid #b7e0ae;
@@ -120,9 +153,6 @@ nav{
 }
 .project-card-description h3{
     margin:auto;
-}
-.social-container{
-    justify-content: center;
 }
 .clickable{
     user-select: none;
