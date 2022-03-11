@@ -103,7 +103,6 @@ nav{
     height: 15rem;
     border: 5px solid #82a77b;
     border-radius: 1em;
-    /* filter: invert(75%) sepia(7%) saturate(1551%) hue-rotate(64deg) brightness(84%) contrast(80%); */
 }
 .hide{
     opacity: 0;
