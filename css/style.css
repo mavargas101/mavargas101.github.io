@@ -10,6 +10,19 @@
 body{
     background-color: #e9ede8;
 }
+h1, h3, h4{
+    margin: 0;
+}
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+h3{
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
 /* used for the navigation bar at the top */
 .sticky{
     position: sticky;
@@ -31,7 +44,7 @@ nav{
     align-items: center;
     justify-content: center;
     border: 1px solid #b7e0ae;
-    border-radius: 50%;
+    border-radius: 0.5rem;
     height: 2rem;
     width: 2rem;
     color:#5a964e;
@@ -62,6 +75,12 @@ nav{
     display: flex;
     flex-direction: row;
 }
+.flex-space-between{
+    justify-content: space-between;
+}
+.flex-center{
+    justify-content: center;
+}
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -72,14 +91,19 @@ nav{
     flex-direction: column;
     max-width: 42rem;
     padding: 2.5rem 0rem 2.5rem 0rem;
-    border-bottom: 1px solid #b7e0ae;
+    border-bottom: 1px solid var(--accent-color);
 }
 .transition{
     transition: all 0.5s;
 }
 .hero {
     margin:  auto;
-
+}
+.self-portrait {
+    height: 15rem;
+    border: 5px solid #82a77b;
+    border-radius: 1em;
+    /* filter: invert(75%) sepia(7%) saturate(1551%) hue-rotate(64deg) brightness(84%) contrast(80%); */
 }
 .hide{
     opacity: 0;
@@ -93,7 +117,7 @@ nav{
 }
 .hero-button-container{
     padding-top: 2rem;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .logo:hover{
     background-color: #c2e6bb;
@@ -108,6 +132,8 @@ nav{
     border-radius: .5em;
     padding: 0.5rem 5rem;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
     color: black;
 }
 .hero-button:hover{
@@ -142,7 +168,6 @@ nav{
     width: 100%;
     height: 8rem;
     padding: 1rem;
-    
 }
 .project-card:hover{
     background-color: #c2e6bb;
@@ -154,6 +179,13 @@ nav{
 }
 .project-card-description h3{
     margin:auto;
+}
+.coming-soon-card{
+    justify-content: center;
+    text-align: center;
+    border-style: dashed;
+    border: 2px dashed #b7e0ae;
+    padding: 5rem 0.5rem;
 }
 .clickable{
     user-select: none;
@@ -169,6 +201,18 @@ nav{
 }
 
 @media screen and (max-width: 672px){
+    h1{
+        font-size: 2.5rem;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem;
+    }
+    .hero-text{
+        justify-content: center;
+    }
+    
     .hero-button-container{
         flex-direction: column;
         gap: 1rem;
@@ -179,7 +223,7 @@ nav{
     }
     .website-structure{
         max-width: 42rem;
-        padding: 5rem 1rem 10rem 1rem;
+        padding: 2.5rem 1rem 3.5rem 1rem;
         border-bottom: 1px solid #b7e0ae;
     }
     .project-card{
