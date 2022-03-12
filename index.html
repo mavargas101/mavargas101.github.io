@@ -12,41 +12,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body >
-    <div class="sticky nav-container">
+<body class=".light transition">
+    <div class="sticky nav-container transition">
         <nav class="flex">
             <div>
                 <div id="logo" class="logo flex clickable">MV</div>
             </div>
-            <div class="flex nav-list">
+            <div class="flex nav-list transition">
                 <!-- Github -->
                 <a href="https://github.com/mavargas101" class="logo flex">
                     <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="var(--accent-color)" fill-rule="evenodd" d="M11.9989871,1 C5.92550416,1 1,5.92482888 1,12.0003376 C1,16.8603395 4.15153934,20.9829338 8.52263728,22.4374904 C9.0729918,22.5387827 9.27355045,22.199116 9.27355045,21.9073943 C9.27355045,21.6467356 9.2640965,20.954572 9.25869425,20.0368642 C6.19899322,20.7013414 5.55342398,18.5620492 5.55342398,18.5620492 C5.0530403,17.2911692 4.33183953,16.9528531 4.33183953,16.9528531 C3.33309801,16.2708186 4.40747107,16.2843243 4.40747107,16.2843243 C5.51155652,16.3619816 6.09229872,17.4181221 6.09229872,17.4181221 C7.07348292,19.0988981 8.66714755,18.6133706 9.2938089,18.3317781 C9.39375058,17.6213819 9.67804414,17.1365297 9.99205009,16.86169 C7.54955646,16.5841493 4.98146045,15.6401056 4.98146045,11.4249977 C4.98146045,10.224347 5.41026428,9.24181221 6.11390773,8.47334172 C6.00046042,8.19512569 5.62297799,7.07618404 6.22195279,5.56220265 C6.22195279,5.56220265 7.14506277,5.26642929 9.24653918,6.68992296 C10.12373,6.44547101 11.0650726,6.32392032 12.0003376,6.31919335 C12.9349274,6.32392032 13.8755947,6.44547101 14.7541361,6.68992296 C16.8542619,5.26642929 17.7760214,5.56220265 17.7760214,5.56220265 C18.3763467,7.07618404 17.9988643,8.19512569 17.8860923,8.47334172 C18.5910863,9.24181221 19.0165137,10.224347 19.0165137,11.4249977 C19.0165137,15.6509101 16.444366,16.5807729 13.9944443,16.8529114 C14.3888087,17.192578 14.7406305,17.863808 14.7406305,18.890236 C14.7406305,20.3603241 14.7271248,21.5467939 14.7271248,21.9073943 C14.7271248,22.2018171 14.9256576,22.5441849 15.4834403,22.4368151 C19.8511618,20.9788821 23,16.8589889 23,12.0003376 C23,5.92482888 18.0744958,1 11.9989871,1"/>
+                        <path fill="var(--navbar-icon-color)" fill-rule="evenodd" d="M11.9989871,1 C5.92550416,1 1,5.92482888 1,12.0003376 C1,16.8603395 4.15153934,20.9829338 8.52263728,22.4374904 C9.0729918,22.5387827 9.27355045,22.199116 9.27355045,21.9073943 C9.27355045,21.6467356 9.2640965,20.954572 9.25869425,20.0368642 C6.19899322,20.7013414 5.55342398,18.5620492 5.55342398,18.5620492 C5.0530403,17.2911692 4.33183953,16.9528531 4.33183953,16.9528531 C3.33309801,16.2708186 4.40747107,16.2843243 4.40747107,16.2843243 C5.51155652,16.3619816 6.09229872,17.4181221 6.09229872,17.4181221 C7.07348292,19.0988981 8.66714755,18.6133706 9.2938089,18.3317781 C9.39375058,17.6213819 9.67804414,17.1365297 9.99205009,16.86169 C7.54955646,16.5841493 4.98146045,15.6401056 4.98146045,11.4249977 C4.98146045,10.224347 5.41026428,9.24181221 6.11390773,8.47334172 C6.00046042,8.19512569 5.62297799,7.07618404 6.22195279,5.56220265 C6.22195279,5.56220265 7.14506277,5.26642929 9.24653918,6.68992296 C10.12373,6.44547101 11.0650726,6.32392032 12.0003376,6.31919335 C12.9349274,6.32392032 13.8755947,6.44547101 14.7541361,6.68992296 C16.8542619,5.26642929 17.7760214,5.56220265 17.7760214,5.56220265 C18.3763467,7.07618404 17.9988643,8.19512569 17.8860923,8.47334172 C18.5910863,9.24181221 19.0165137,10.224347 19.0165137,11.4249977 C19.0165137,15.6509101 16.444366,16.5807729 13.9944443,16.8529114 C14.3888087,17.192578 14.7406305,17.863808 14.7406305,18.890236 C14.7406305,20.3603241 14.7271248,21.5467939 14.7271248,21.9073943 C14.7271248,22.2018171 14.9256576,22.5441849 15.4834403,22.4368151 C19.8511618,20.9788821 23,16.8589889 23,12.0003376 C23,5.92482888 18.0744958,1 11.9989871,1"/>
                       </svg>  
 
                     </a>
                 <!-- Linkedin -->
                 <a href="https://www.linkedin.com/in/mavargas101/" class="logo flex">
                         <svg width="18px" height="18px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="var(--accent-color)" d="M1 6h4v13H1V6zm2-5C1.8 1 1 2 1 3.1 1 4.1 1.8 5 3 5c1.3 0 2-.9 2-2s-.8-2-2-2zm11.6 5.2c-2.1 0-3.3 1.2-3.8 2h-.1l-.2-1.7H6.9c0 1.1.1 2.4.1 3.9V19h4v-7.1c0-.4 0-.7.1-1 .3-.7.8-1.6 1.9-1.6 1.4 0 2 1.2 2 2.8V19h4v-7.4c0-3.7-1.9-5.4-4.4-5.4z"/>
+                            <path fill="var(--navbar-icon-color)" d="M1 6h4v13H1V6zm2-5C1.8 1 1 2 1 3.1 1 4.1 1.8 5 3 5c1.3 0 2-.9 2-2s-.8-2-2-2zm11.6 5.2c-2.1 0-3.3 1.2-3.8 2h-.1l-.2-1.7H6.9c0 1.1.1 2.4.1 3.9V19h4v-7.1c0-.4 0-.7.1-1 .3-.7.8-1.6 1.9-1.6 1.4 0 2 1.2 2 2.8V19h4v-7.4c0-3.7-1.9-5.4-4.4-5.4z"/>
                         </svg>                   
                 </a>    
                 <!-- Twitter -->
                 <a href="https://twitter.com/mavargas101"  class="logo flex">
                     <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="brand" stroke="none" stroke-width="1" fill="#82a77b" fill-rule="evenodd">
-                            <g id="twitter" fill="var(--accent-color)" fill-rule="nonzero">
+                            <g id="twitter" fill="var(--navbar-icon-color)" fill-rule="nonzero">
                                 <path d="M8.28251301,20.262505 C15.8295318,20.262505 19.9591837,14.0040016 19.9591837,8.58583433 C19.9591837,8.40976391 19.9591837,8.23369348 19.9511805,8.05762305 C20.7515006,7.48139256 21.4477791,6.75310124 22,5.92877151 C21.2637055,6.25690276 20.4713886,6.4729892 19.6390556,6.57703081 C20.487395,6.07282913 21.1356543,5.2645058 21.4477791,4.30412165 C20.6554622,4.77631052 19.77511,5.11244498 18.8387355,5.29651861 C18.0864346,4.49619848 17.0220088,4 15.8455382,4 C13.5806323,4 11.739896,5.84073629 11.739896,8.10564226 C11.739896,8.42577031 11.779912,8.73789516 11.8439376,9.04201681 C8.43457383,8.87394958 5.40936375,7.23329332 3.38455382,4.75230092 C3.03241297,5.36054422 2.83233293,6.06482593 2.83233293,6.81712685 C2.83233293,8.24169668 3.56062425,9.49819928 4.65706283,10.2344938 C3.98479392,10.2104842 3.35254102,10.0264106 2.80032013,9.72228892 L2.80032013,9.77831132 C2.80032013,11.7631052 4.21688675,13.4277711 6.08963585,13.8039216 C5.7454982,13.89996 5.38535414,13.9479792 5.00920368,13.9479792 C4.74509804,13.9479792 4.4889956,13.9239696 4.24089636,13.8759504 C4.76110444,15.5086034 6.28171269,16.6930772 8.07442977,16.72509 C6.66586635,17.8295318 4.89715886,18.4857943 2.97639056,18.4857943 C2.6482593,18.4857943 2.32012805,18.4697879 2,18.4297719 C3.80872349,19.5822329 5.96958784,20.262505 8.28251301,20.262505" id="Shape"></path>
                             </g>
                         </g>
                     </svg>
                 </a>
-                <!-- <button type="button"  class="logo flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#82a77b" class="nightmode">
-                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                <button type="button"  class="logo flex clickable" id="nitemode">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="var(--navbar-icon-color)">
+                        <g>
+                            <path fill="none" d="M0 0h24v24H0z"/>
+                            <path d="M11.38 2.019a7.5 7.5 0 1 0 10.6 10.6C21.662 17.854 17.316 22 12.001 22 6.477 22 2 17.523 2 12c0-5.315 4.146-9.661 9.38-9.981z"/>
+                        </g>
                     </svg>
-                </button> -->
+                </button>
             </div>
         </nav>
 
@@ -54,12 +57,12 @@
     
     <section class=" website-structure transition">
         <div class="hero flex-row flex-space-between">
-            <div class="hero-text flex-column flex-center">            
-                <h1><span class="accented">Miguel Vargas</span></h1>
+            <div class="hero-text flex-column flex-center ">            
+                <h1 class="accented">Miguel Vargas</h1>
                 <h3>full-stack software engineer</h3>
             </div>
 
-            <img src="img/portrait.png" alt="" class="self-portrait">
+            <img src="img/portrait_2.png" alt="" class="self-portrait">
         </div>
         
     </section>
@@ -73,21 +76,21 @@
         <p class="transition">When someone comes to your website looking for what you provide, will they have a good experience? How will the site look if they reach it on a phone? A tablet?</p>
         <p class="transition">In the mobile age where a <span class="bolded accented">responsive & accessible</span> web presence is a must, it's my privilege to offer the opportunity to be seen on the web to small businesses and individuals around me.</p>
         <div class="flex hero-button-container ">
-            <button type="button" class="hero-button clickable box-shadow site">I need a Site</a>
-            <button type="button" class="hero-button clickable box-shadow dev">I need a Dev</a>
+            <button type="button" class="hero-button clickable box-shadow site transition">I need a Site</a>
+            <button type="button" class="hero-button clickable box-shadow dev transition">I need a Dev</a>
         </div>        
     </section>
     <section class="flex website-structure section2 transition">
         <div class="flex-row section-title">
             <svg width="44px" height="44px" fill="var(--accent-color)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.75 4.5a.25.25 0 00-.25.25v14.5c0 .138.112.25.25.25h16.5a.25.25 0 00.25-.25V7.687a.25.25 0 00-.25-.25h-8.471a1.75 1.75 0 01-1.447-.765L8.928 4.61a.25.25 0 00-.208-.11H3.75zM2 4.75C2 3.784 2.784 3 3.75 3h4.971c.58 0 1.12.286 1.447.765l1.404 2.063a.25.25 0 00.207.11h8.471c.966 0 1.75.783 1.75 1.75V19.25A1.75 1.75 0 0120.25 21H3.75A1.75 1.75 0 012 19.25V4.75z"/></svg>
-            <h2>Featured Projects</h2>
+            <h2 class="transition">Featured Projects</h2>
         </div>
         
         <div class="grid">
             <div class="flex project-card box-shadow clickable">
                 <div class="project-card-image"></div>
                 <div class="project-card-description">
-                    <h4>Project 1</h4>
+                    <h4 class="transition">Project 1</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <!-- <div>Live Site</div> -->
                 </div>
@@ -95,20 +98,20 @@
             <div class="flex project-card box-shadow clickable">
                 <div class="project-card-image"></div>
                 <div class="project-card-description">
-                    <h4>Project 2</h4>
+                    <h4 class="transition">Project 2</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
             <div class="flex project-card box-shadow clickable">
                 <div class="project-card-image"></div>
                 <div class="project-card-description">
-                    <h4>Project 3</h4>
+                    <h4 class="transition">Project 3</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
-            <div class="flex-column coming-soon-card clickable">
+            <div class="flex-column coming-soon-card">
                 <div class="project-card-description">
-                    <h4>More coming soon!</h4>
+                    <h4 class="transition">More coming soon!</h4>
                     <p>...</p>
                 </div>
             </div>
@@ -118,9 +121,9 @@
     <section class="website-structure">
         <div class="flex-row section-title">
             <svg width="44px" height="44px" fill="var(--accent-color)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 2.5a5.5 5.5 0 00-3.096 10.047 9.005 9.005 0 00-5.9 8.18.75.75 0 001.5.045 7.5 7.5 0 0114.993 0 .75.75 0 101.499-.044 9.005 9.005 0 00-5.9-8.181A5.5 5.5 0 0012 2.5zM8 8a4 4 0 118 0 4 4 0 01-8 0z"/></svg>
-            <h2>About Me</h2>
+            <h2 class="transition">About Me</h2>
         </div>
-        <p>I'm <span class="bolded accented">Miguel Vargas</span>, a full-stack web developer based in Philadelphia, PA. I am passionate about helping businesses improve their web presence. During the daytime, you can find me studying and thinking about my next project. At night, I'm a tinkerer and a video game enthusiast. </p>
+        <p class="transition">I'm <span class="bolded accented">Miguel Vargas</span>, a full-stack web developer based in Philadelphia, PA. I am passionate about helping businesses improve their web presence. During the daytime, you can find me studying and thinking about my next project. At night, I'm a tinkerer and a video game enthusiast. </p>
 
     </section>
     <footer>

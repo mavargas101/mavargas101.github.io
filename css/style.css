@@ -3,15 +3,45 @@
     font-family: "Inter", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 :root{
-    --accent-color:#82a77b;
-    --text-color: black;
-    --bground-color: #e9ede8;
+    --navbar-icon-color: #4B5463;
+    --accent-color:#FF3B3F;
+    --text-color: #374151;
+    --heading-color: #4B5463;
+    --bground-color: white;
+    --nav-bground-color:#ffffffe1;
+    --hover-background: #e7e7e7;
+    --border-color: #D6D9DF;
+    --image-background-color: #f6f6f6;
+}
+.light{
+    --navbar-icon-color: #4B5463;
+    --accent-color:#FF3B3F;
+    --text-color: #374151;
+    --heading-color: #4B5463;
+    --bground-color: white;
+    --nav-bground-color:#ffffffe1;
+    --hover-background: #e7e7e7;
+    --border-color: #D6D9DF;
+    --image-background-color: #f6f6f6;
+}
+.dark{
+    --bground-color: #18181B;
+    --nav-bground-color: #18181Be1;
+    --hover-background:#1f1f29;
+    --text-color:#9ca3af;
+    --heading-color: white;
+    --navbar-icon-color:#9ca3af;
+    --border-color: #9ca3af0d;
+    --image-background-color: #131319;
 }
 body{
     background-color: var(--bground-color);
+    color: var(--text-color);
 }
-h1, h3, h4{
+
+h1, h2, h3, h4{
     margin: 0;
+    color: var(--heading-color);
 }
 h1{
     font-size: 3rem;
@@ -30,10 +60,10 @@ p{
 .sticky{
     position: sticky;
     top: 0px;
-    background-color: #e9ede8e1;
 }
 .nav-container{
-    border-bottom: 1px solid #b7e0ae;
+    background-color: var(--nav-bground-color);
+    border-bottom: 1px solid var(--border-color);
     width: 100vw;
     padding: 1rem;
 }
@@ -46,11 +76,12 @@ nav{
 .logo{
     align-items: center;
     justify-content: center;
-    border: 1px solid #b7e0ae;
+    background-color: var(--image-background-color);
+    border: 1px solid var(--border-color);
     border-radius: 0.5rem;
     height: 2rem;
     width: 2rem;
-    color:#5a964e;
+    color:var(--accent-color);
     font-weight: 600;
     font-size: 0.8rem;
 }
@@ -94,7 +125,7 @@ nav{
     flex-direction: column;
     max-width: 42rem;
     padding: 2.5rem 0rem 2.5rem 0rem;
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--border-color);
 }
 .transition{
     transition: all 0.5s;
@@ -104,25 +135,20 @@ nav{
 }
 .self-portrait {
     height: 15rem;
-    border: 3px solid #82a77b;
+    border: 2px solid var(--border-color);
     border-radius: 1em;
+    background-color: var(--image-background-color);
 }
 .hide{
     opacity: 0;
 }
-.hero-image{
-    /* background-image: url('/me.jpg'); */
-    width: 100%;
-    border: 1px solid #b7e0ae;
-    height: 20rem;
 
-}
 .hero-button-container{
     padding-top: 2rem;
     justify-content: space-around;
 }
 .logo:hover{
-    background-color: #c2e6bb;
+    background-color: var(--hover-background);
     transition: 500ms;
 }
 .logo:active{
@@ -130,16 +156,17 @@ nav{
     transition: 200ms;
 }
 .hero-button{
-    border: 1px solid #b7e0ae;
+    border: 1px solid var(--border-color);
     border-radius: .5em;
     padding: 0.5rem 5rem;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
-    color: black;
+    color: var(--text-color);
+    background-color: var(--bground-color);
 }
 .hero-button:hover{
-    background-color: #c2e6bb;
+    background-color: var(--hover-background);
     transition: 500ms;
 }
 .hero-button:active{
@@ -160,15 +187,15 @@ nav{
 }
 .project-card{
     flex-direction: column;
-    border: 1px solid #b7e0ae;
+    border: 1px solid var(--border-color);
     border-radius: .5em;
     max-width: 36rem;
 }
 .project-card-image{
-    background-color: #d4e0d0;
+    background-color: var(--image-background-color);
     width: 100%;
     height: 13rem;
-    border-bottom: 1px solid #b7e0ae;
+    border-bottom: 1px solid var(--border-color);
     border-top-left-radius: .5em;
     border-top-right-radius: .5em;
 }
@@ -178,7 +205,7 @@ nav{
     padding: 1rem;
 }
 .project-card:hover{
-    background-color: #c2e6bb;
+    background-color: var(--hover-background);
     transition: 500ms;
 }
 .project-card:active{
@@ -193,7 +220,7 @@ nav{
     justify-content: center;
     text-align: center;
     border-style: dashed;
-    border: 2px dashed #b7e0ae;
+    border: 2px dashed var(--border-color);
     padding: 1rem 0.5rem;
     border-radius: .5em;
     max-width: 36rem;
@@ -205,11 +232,7 @@ nav{
 .box-shadow{
     box-shadow: 3px 3px 6px 0 rgb(0 0 0 / 50%);
 }
-.tech-container{
-    justify-content: space-between;
-    color: #82a77b;
-    font-weight: bold;
-}
+
 footer{
     color:rgb(150, 149, 149);
     text-align: center;
@@ -240,7 +263,7 @@ footer{
     .website-structure{
         max-width: 42rem;
         padding: 2.5rem 1rem 3.5rem 1rem;
-        border-bottom: 1px solid #b7e0ae;
+        border-bottom: 1px solid var(--border-color);
     }
     .project-card{
         max-width: 36rem;
