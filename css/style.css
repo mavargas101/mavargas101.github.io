@@ -12,6 +12,7 @@
     --hover-background: #e7e7e7;
     --border-color: #D6D9DF;
     --image-background-color: #f6f6f6;
+    --contact-color: #86888d;
 }
 .light{
     --navbar-icon-color: #4B5463;
@@ -34,19 +35,24 @@
     --border-color: #9ca3af25;
     --image-background-color: #131319;
 }
+html{
+    background-color: var(--image-background-color);
+}
 body{
-    background-color: var(--bground-color);
     color: var(--text-color);
 }
 
-h1, h2, h3, h4{
+h1, h2, h4{
     margin: 0;
     color: var(--heading-color);
+    font-family: 'Source Sans Pro';
+}
+h3{
+    margin: 0;
 }
 h1{
     font-size: 3rem;
-    text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
 }
 h3{
     font-size: 1.1rem;
@@ -121,11 +127,17 @@ nav{
     grid-gap: 2rem;
 }
 .website-structure{
-    margin:auto;
+    margin: 1.5rem auto;
     flex-direction: column;
-    max-width: 42rem;
-    padding: 2.5rem 0rem 2.5rem 0rem;
-    border-bottom: 1px solid var(--border-color);
+    background-color: var(--bground-color);
+    max-width: 45rem;
+    padding: 2.5rem 2rem 2.5rem 2rem;
+    border-radius: 1rem;
+}
+.contact-link{
+    color: var(--contact-color);
+    font-weight: 600;
+    text-decoration-style: dotted;
 }
 .transition{
     transition: all 0.5s;
@@ -153,7 +165,9 @@ nav{
     transition: 500ms;
 }
 .logo:active{
-    background-color: white;
+    background-color: #ff6d6f;
+    border-color: #ff6d6f;
+
     transition: 200ms;
 }
 .hero-button{
@@ -171,17 +185,20 @@ nav{
     transition: 500ms;
 }
 .hero-button:active{
-    background-color: white;
+    background-color: #ff6d6f;
+    border-color: #ff6d6f;
 
     transition: 200ms;
 }
 
-
-.section1{
-    margin: auto;
+.clicked{
+    outline: 3px solid var(--accent-color);
 }
+/* .section1{
+
+} */
 .section2{
-    margin: auto;
+
     gap: 1rem;
 }
 .section-title{
@@ -213,7 +230,9 @@ nav{
     transition: 500ms;
 }
 .project-card:active{
-    background-color: white;
+    background-color: #ff6d6f;
+    border-color: #ff6d6f;
+
     transition: 200ms;
 }
 .project-card-description h3{
@@ -237,6 +256,22 @@ nav{
     box-shadow: 3px 3px 6px 0 rgb(0 0 0 / 50%);
 }
 
+.contact{
+    gap: 0.5rem;
+    margin: 2rem 10rem 0 10rem;
+
+}
+.contact-title{
+    border-bottom: 1px solid var(--contact-color);
+    color: var(--contact-color);
+
+}
+.contact-email{
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
 footer{
     color:rgb(150, 149, 149);
     text-align: center;
@@ -245,8 +280,16 @@ footer{
 
 @media screen and (max-width: 672px){
     h1{
-        font-size: 2.5rem;
+        font-size: 2.4rem;
     }
+    h2{
+        font-size: 1.3rem;
+    }
+    .contact{
+        gap: 0.5rem;
+        margin: 2rem 10% 0 10%;
+    }
+
     .hero{
         flex-direction: column-reverse;
         align-items: center;
@@ -267,7 +310,7 @@ footer{
     .website-structure{
         max-width: 42rem;
         padding: 2.5rem 1rem 3.5rem 1rem;
-        border-bottom: 1px solid var(--border-color);
+        margin: 1.5rem 1rem;
     }
     .project-card{
         max-width: 36rem;
