@@ -31,7 +31,7 @@
     --text-color:#9ca3af;
     --heading-color: white;
     --navbar-icon-color:#9ca3af;
-    --border-color: #9ca3af0d;
+    --border-color: #9ca3af25;
     --image-background-color: #131319;
 }
 body{
@@ -146,6 +146,7 @@ nav{
 .hero-button-container{
     padding-top: 2rem;
     justify-content: space-around;
+
 }
 .logo:hover{
     background-color: var(--hover-background);
@@ -163,7 +164,7 @@ nav{
     text-transform: uppercase;
     font-weight: 500;
     color: var(--text-color);
-    background-color: var(--bground-color);
+    background-color: var(--image-background-color)
 }
 .hero-button:hover{
     background-color: var(--hover-background);
@@ -171,8 +172,12 @@ nav{
 }
 .hero-button:active{
     background-color: white;
+
+    outline: 2px solid var(--accent-color);
     transition: 200ms;
 }
+
+
 .section1{
     margin: auto;
 }
@@ -246,7 +251,7 @@ footer{
     .hero{
         flex-direction: column-reverse;
         align-items: center;
-        gap: 1rem;
+        gap: 2rem;
     }
     .hero-text{
         justify-content: center;
