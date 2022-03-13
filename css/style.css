@@ -173,7 +173,6 @@ nav{
 .hero-button:active{
     background-color: white;
 
-    outline: 2px solid var(--accent-color);
     transition: 200ms;
 }
 
