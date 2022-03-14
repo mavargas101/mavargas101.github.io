@@ -7,43 +7,52 @@ button1.addEventListener('click', changeToSite);
 const button2 = document.querySelector('.dev');
 button2.addEventListener('click', changeToDev);
 
+const section1 = document.querySelector('.section1');
+let mode = "site";
 function scrollToTop(){
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
 function changeToSite(){
-    const div = document.querySelector('.section1 > div > div');
+    if(mode != "site"){
+        const div = document.querySelector('.section1 > div > div');
 
-    const h2 = document.querySelector('.section1 > div > h2');
-    const p1 = document.querySelector('.section1 p');
-    const p2 = document.querySelector('.section1 p + p');
-
-    div.classList.add('hide');
-    setTimeout(function(){
-    div.innerHTML = '<svg width="42px" height="42px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="var(--accent-color)"><g><path fill="none" d="M0 0h24v24H0z"/><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 7H4v9h16v-9zM5 6v2h2V6H5zm4 0v2h2V6H9z"/></g></svg>';}, 500)
-    setTimeout(function() { 
-    div.classList.remove('hide')
-    }, 500);
-    h2.classList.add('hide');
-    setTimeout(function(){
-        h2.innerHTML = "Is your website working for you?"}, 500)
-    setTimeout(function() { 
-        h2.classList.remove('hide')
-    }, 500);
-    p1.classList.add('hide');
-    setTimeout(function(){
-        p1.innerHTML = "When someone comes to your website looking for what you provide, will they have a good experience? How will the site look if they reach it on a phone? A tablet?"}, 500)
-    setTimeout(function() { 
-        p1.classList.remove('hide')
-    }, 500);
-    p2.classList.add('hide');
-    setTimeout(function(){
-        p2.innerHTML = "In the mobile age where a  <span class=\"bolded accented\">responsive & accessible</span> web presence is a must, it's my privilege to offer the opportunity to be seen on the web to small businesses and individuals around me."}, 500)
-    setTimeout(function() { 
-        p2.classList.remove('hide')
-    }, 500);
+        const h2 = document.querySelector('.section1 > div > h2');
+        const p1 = document.querySelector('.section1 p');
+        const p2 = document.querySelector('.section1 p + p');
+    
+        div.classList.add('hide');
+        setTimeout(function(){
+        div.innerHTML = '<svg width="42px" height="42px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="var(--accent-color)"><g><path fill="none" d="M0 0h24v24H0z"/><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 7H4v9h16v-9zM5 6v2h2V6H5zm4 0v2h2V6H9z"/></g></svg>';}, 500)
+        setTimeout(function() { 
+        div.classList.remove('hide')
+        }, 500);
+        h2.classList.add('hide');
+        setTimeout(function(){
+            h2.innerHTML = "Is your website working for you?"}, 500)
+        setTimeout(function() { 
+            h2.classList.remove('hide')
+        }, 500);
+        p1.classList.add('hide');
+        setTimeout(function(){
+            p1.innerHTML = "When someone comes to your website looking for what you provide, will they have a good experience? How will the site look if they reach it on a phone? A tablet?"}, 500)
+        setTimeout(function() { 
+            p1.classList.remove('hide')
+        }, 500);
+        p2.classList.add('hide');
+        setTimeout(function(){
+            p2.innerHTML = "In the mobile age where a  <span class=\"bolded accented\">responsive & accessible</span> web presence is a must, it's my privilege to offer the opportunity to be seen on the web to small businesses and individuals around me."}, 500)
+        setTimeout(function() { 
+            p2.classList.remove('hide')
+        }, 500);
+        mode = "site";
+    }
+    
+    section1.scrollIntoView({behavior: "smooth", block: "center"});
 }
 
 function changeToDev(){
+    if(mode != "dev"){
+
     const div = document.querySelector('.section1 > div > div');
     const h2 = document.querySelector('.section1 > div > h2');
     const p1 = document.querySelector('.section1 p');
@@ -74,6 +83,10 @@ function changeToDev(){
     setTimeout(function() { 
         p2.classList.remove('hide')
     }, 500);
+    mode = "dev";
+}
+    section1.scrollIntoView({behavior: "smooth", block: "center"});
+
 }
 let nite = false;
 
