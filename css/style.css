@@ -42,7 +42,7 @@ body{
     color: var(--text-color);
 }
 
-h1, h2, h4{
+h1, h2, h4,h5{
     margin: 0;
     color: var(--heading-color);
     font-family: 'Source Sans Pro';
@@ -154,6 +154,84 @@ nav{
 .hide{
     opacity: 0;
 }
+.skill-container{
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.skill-text{
+    margin: 0;
+    font-size: 1rem;
+}
+.skill{
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 1rem;
+    border-radius: .25rem;
+    justify-content: space-between;
+
+}
+.skill h4{
+    font-weight: 500;
+}
+.js{
+    background-color:#f7df1e;
+}
+.js h4{
+    color: #374151;
+}
+.html-5{
+    background-color:  #e7ebee;;
+    color: #e34f26;;
+}
+.html-5 h4{
+    color: #374151;
+}
+.css3{
+    background-color: #1572b6;
+    color:white;
+
+}
+.css3 h4{
+    color:white;
+
+}
+.mongo{
+    background-color: #004968;
+    color: #FFFFFF;
+}
+.mongo h4{ 
+    color: #FFFFFF;
+}
+.figma{
+    background-color: #F24E1E;
+    color: white;
+}
+.figma h4{ 
+    color: white;
+}
+
+.express{
+    background-color: #303030;
+    color: #669961;
+}
+.express h4{ 
+    color: #669961;
+}
+.node{
+    background-color: #669961;
+    color: #303030;
+}
+.node h4{ 
+    color: #303030;
+}
+.react{
+    background-color: #222222;
+    color: #61DAFB;
+}
+.react h4{ 
+    color: #61DAFB;
+}
+
 
 .hero-button-container{
     padding-bottom: 2rem;
@@ -255,6 +333,9 @@ nav{
 .box-shadow{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
+.box-shadow-2{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
 
 .contact{
     gap: 0.5rem;
@@ -302,6 +383,9 @@ footer{
     .hero-button-container{
         flex-direction: column;
         gap: 1rem;
+    }
+    .skill-container{
+        justify-content: center;
     }
 
     .grid{
