@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: "Inter", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "Ubuntu", "Inter", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 :root{
     --navbar-icon-color: #4B5463;
